@@ -1,22 +1,16 @@
-body {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background: black;
+ 
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr); /* Adjust for larger grids */
-  gap: 5px;
+  grid-template-columns: repeat(11, 40px); /* 11 columns to match image */
+  grid-gap: 5px;
 }
 
 .cell {
@@ -25,18 +19,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: rgb(200, 200, 200);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(255, 200, 0);
+  font-size: 14px;
 }
 
 .red {
-  background-color: red;
+  background: red;
   color: white;
 }
 
 .blue {
-  background-color: blue;
+  background: blue;
   color: white;
 }
